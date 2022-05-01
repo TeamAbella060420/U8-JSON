@@ -4,9 +4,13 @@ xhr.onreadystatechange = function () {
        var employees = JSON.parse(xhr.responseText);
         var statusHTML = '<ul class="bulleted">';
         for (var i=0; i<employees.length; i += 1) {
-            statusHTML += '<li class="0">';
+          if (employees[i].inoffice === true) {
+          statusHTML += '<li class="0">';
+        } else {
+            statusHTML += '<li class="out">';
         }
     }
+  } 
 };
 xhr.open('GET', 'data/employees.json');
 xhr.send();
