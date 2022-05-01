@@ -12,6 +12,7 @@ xhr.onreadystatechange = function () {
         statusHTML += employees[i].name;
         statusHTML += '</li>';
     }
+    statusHTML += '</ul>';
   } 
 };
 xhr.open('GET', 'data/employees.json');
