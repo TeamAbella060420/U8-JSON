@@ -4,7 +4,7 @@ xhr.onreadystatechange = function () {
        var employees = JSON.parse(xhr.responseText);
         var statusHTML = '<ul class="bulleted">';
         for (var i=0; i<employees.length; i += 1) {
-            
+            statusHTML += '<li class="0">';
         }
     }
 };
