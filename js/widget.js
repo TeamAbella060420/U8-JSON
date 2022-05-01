@@ -13,6 +13,7 @@ xhr.onreadystatechange = function () {
         statusHTML += '</li>';
     }
     statusHTML += '</ul>';
+    document.getElementById('employeelist').innerHTML = statusHTML;
   } 
 };
 xhr.open('GET', 'data/employees.json');
