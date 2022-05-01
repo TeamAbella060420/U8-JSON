@@ -9,6 +9,8 @@ xhr.onreadystatechange = function () {
         } else {
             statusHTML += '<li class="out">';
         }
+        statusHTML += employees[i].name;
+        statusHTML += '</li>';
     }
   } 
 };
